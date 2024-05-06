@@ -75,7 +75,8 @@ data.forEach((product) => {
   btn.style.borderRadius = '10px'
   btn.style.fontSize = '20px'
   btn.style.marginLeft = '150px'
- 
+
+  
   li.appendChild(img)
   li.appendChild(h2)
   li.appendChild(prices)
