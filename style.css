@@ -1,8 +1,0 @@
-button{
-    transition: 0.5s all;
-}
-
-button:hover{
-    cursor: pointer;
-    opacity: 80%;
-}

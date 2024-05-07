@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music-player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <img src="/img/Konsta-Odamlar-nima-deydi.jpg" id="cover" class="cover" alt="" />
+      </div>
+
+      <audio id="audio" src="/music/Konsta-Odamlar-nima-deydi.mp3"></audio>
+
+      <div class="controls">
+        <button id="backword">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play">
+          <i class="fa-solid fa-play" id="play-btn-toggle"></i>
+        </button>
+        <button id="fa-forward-step">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+      </div>
+      <input type="range" id="changeVolume" class="changeVolume" min="0" max="1" step="0.1">
+    </div>
+    <script type="module" src="/static/app.js"></script>
+  </body>
+</html>
