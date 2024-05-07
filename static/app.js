@@ -9,11 +9,11 @@ const tracks = ["Konsta-Insonlar", "Konsta-Odamlar-nima-deydi"];
 
 let currentTrack = 0
 
-const changeTrack = (index) => {
-  audioEl.src = `./music/${tracks[index]}.mp3`; 
-  coverEl = `./img/${tracks[index]}.jpg`;
-};
-
+const changeTrack = (i) => {
+  audioEl.src = `/music/${tracks[i]}.mp3`; 
+  coverEl.src = `/img/${tracks[i]}.jpg`;
+}
+changeTrack(currentTrack)
 
 playBtn.addEventListener("click", () => {
   if (wrapperEl.classList.contains("play")) {
