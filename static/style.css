@@ -66,8 +66,12 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-play-state: paused;
+  transition: 0.5s all;
 }
-
+.cover:hover{
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+  cursor:pointer
+}
 .wrapper.play .cover {
   animation-play-state: running;
 }
